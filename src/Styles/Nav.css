@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500&display=swap");
+nav {
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  border-bottom: 1px solid #b6b0b0;
+  height: 15vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav .left img {
+  width: 35%;
+}
+
+nav .hidenav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-left: 20%;
+  color: #4d4b4b;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+nav .hidenav li {
+  position: relative;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+nav .hidenav li:hover {
+  cursor: pointer;
+}
+
+nav .hidenav li:hover::after {
+  width: 100%;
+  cursor: pointer;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+nav .hidenav li::after {
+  content: "";
+  position: absolute;
+  top: 220%;
+  left: 0;
+  width: 0%;
+  border-bottom: 5px solid #ec7207;
+  cursor: pointer;
+}
+
+nav .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 25%;
+}
+
+nav .right span {
+  top: 3%;
+  right: 18.5%;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  background: #ff9000;
+  position: absolute;
+}
+
+nav .right img {
+  width: 40%;
+  height: 40%;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  position: relative;
+}
+
+nav .right img:hover {
+  border: 1px solid orange;
+  cursor: pointer;
+}
+
+.cart {
+  height: 37vh;
+  width: 103%;
+  position: absolute;
+  left: 0%;
+  top: -3%;
+  background-color: white;
+  -webkit-box-shadow: 0px 3px 20px 0px black;
+          box-shadow: 0px 3px 20px 0px black;
+  border-radius: 10px;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.cart .mid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5% 0 5%;
+}
+
+.cart .mid p {
+  color: #68707d;
+}
+
+.cart img {
+  height: 60px;
+  width: 60px;
+}
+
+.cart h4 {
+  border-bottom: 1px solid gray;
+  padding: 7%;
+  color: #68707d;
+}
+
+.cart h5 {
+  color: #68707d;
+  padding-top: 5%;
+}
+
+.cart span {
+  color: #68707d;
+}
+
+.cart button {
+  width: 80%;
+  margin: auto auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: -1px 10px 7px 0px #fce2c1;
+          box-shadow: -1px 10px 7px 0px #fce2c1;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #ff7057), to(#fb9e25));
+  background: linear-gradient(to bottom, #ff7057 5%, #fb9e25 100%);
+  border-radius: 5px;
+  border: 1px solid #eeb44f;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-weight: bold;
+  padding: 4%;
+}
+
+.ham {
+  display: none;
+}
+
+.logo {
+  position: relative;
+}
+
+@media screen and (max-width: 500px) {
+  nav {
+    width: 90%;
+    position: relative;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-bottom: none;
+  }
+  nav .cancel {
+    display: block;
+    position: absolute;
+    top: 10%;
+  }
+  nav .left {
+    width: 60%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  nav .left img {
+    width: 75%;
+  }
+  nav .left .shownav {
+    position: absolute;
+    height: 92vh;
+    background-color: white;
+    left: -10%;
+    top: 0%;
+    z-index: 99;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 81%;
+    gap: 5%;
+    padding-left: 20%;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+  }
+  nav .left .hidenav {
+    position: absolute;
+    height: 92vh;
+    background-color: white;
+    left: -200%;
+    top: 0%;
+    z-index: 99;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 81%;
+    gap: 5%;
+    padding-left: 20%;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+  }
+  nav .left .ham {
+    display: block;
+  }
+  nav .right {
+    gap: 10%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  nav .right img {
+    width: 35%;
+  }
+  nav .right span {
+    right: 14%;
+    top: 18%;
+  }
+  .cart {
+    height: 41vh;
+    width: 85%;
+    left: -17%;
+    top: -3%;
+    border-radius: 20px;
+  }
+}
+/*# sourceMappingURL=Nav.css.map */
